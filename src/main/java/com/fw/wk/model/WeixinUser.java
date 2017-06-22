@@ -16,9 +16,9 @@ public class WeixinUser {
 	
 	private String realName;
 	
-	private Byte status;
+	private Integer status;
 	
-	private Byte sex;
+	private Integer sex;
 	
 	private String city;
 	
@@ -41,7 +41,7 @@ public class WeixinUser {
 	}
 
 	public String getNickname() {
-		return nickname;
+		return nickname==null?"":nickname;
 	}
 
 	public void setNickname(String nickname) {
@@ -49,7 +49,7 @@ public class WeixinUser {
 	}
 
 	public String getHeadImgUrl() {
-		return headImgUrl;
+		return headImgUrl==null?"":headImgUrl;
 	}
 
 	public void setHeadImgUrl(String headImgUrl) {
@@ -57,7 +57,7 @@ public class WeixinUser {
 	}
 
 	public String getWxid() {
-		return wxid;
+		return wxid==null?"":wxid;
 	}
 
 	public void setWxid(String wxid) {
@@ -65,7 +65,7 @@ public class WeixinUser {
 	}
 
 	public String getPhone() {
-		return phone;
+		return phone==null?"":phone;
 	}
 
 	public void setPhone(String phone) {
@@ -73,31 +73,31 @@ public class WeixinUser {
 	}
 
 	public String getRealName() {
-		return realName;
+		return realName==null?"":realName;
 	}
 
 	public void setRealName(String realName) {
 		this.realName = realName;
 	}
 
-	public Byte getStatus() {
-		return status;
+	public Integer getStatus() {
+		return status==null?0:status;
 	}
 
-	public void setStatus(Byte status) {
+	public void setStatus(Integer status) {
 		this.status = status;
 	}
 
-	public Byte getSex() {
-		return sex;
+	public Integer getSex() {
+		return sex==null?0:sex;
 	}
 
-	public void setSex(Byte sex) {
+	public void setSex(Integer sex) {
 		this.sex = sex;
 	}
 
 	public String getCity() {
-		return city;
+		return city==null?"":city;
 	}
 
 	public void setCity(String city) {
@@ -105,7 +105,7 @@ public class WeixinUser {
 	}
 
 	public String getCountry() {
-		return country;
+		return country==null?"":country;
 	}
 
 	public void setCountry(String country) {
@@ -113,7 +113,7 @@ public class WeixinUser {
 	}
 
 	public String getProvince() {
-		return province;
+		return province==null?"":province;
 	}
 
 	public void setProvince(String province) {
@@ -121,7 +121,7 @@ public class WeixinUser {
 	}
 
 	public String getUnionid() {
-		return unionid;
+		return unionid==null?"":unionid;
 	}
 
 	public void setUnionid(String unionid) {
@@ -129,7 +129,7 @@ public class WeixinUser {
 	}
 
 	public String getRemark() {
-		return remark;
+		return remark==null?"":remark;
 	}
 
 	public void setRemark(String remark) {
