@@ -16,9 +16,9 @@
     <cache name="cacheToken"
         maxElementsInMemory="1"
         maxElementsOnDisk="0"
-        eternal="true"
+        eternal="false"
         overflowToDisk="false"
-        timeToIdleSeconds="0"
-        timeToLiveSeconds="0"/>
+        timeToIdleSeconds="7000"
+        timeToLiveSeconds="7000"/>
 
 </ehcache>

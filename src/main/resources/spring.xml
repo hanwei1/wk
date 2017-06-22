@@ -16,5 +16,5 @@
 
 	<import resource="spring/spring-mvc.xml"/>
 	<import resource="spring/spring-jdbctemplet.xml"/>
-	<!-- <import resource="spring/spring-cache.xml"/> -->
+	<import resource="spring/spring-cache.xml"/>
 </beans>  
