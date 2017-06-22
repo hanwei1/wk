@@ -101,6 +101,7 @@ public class WeixinServiceImpl extends BaseDao implements WeixinService{
 						"https://api.weixin.qq.com/cgi-bin/user/info?access_token="+tokenServer.getAccessToken() +"&openid="+openid+"&lang=zh_CN"
 						) 
 				);
+		logger.info("Get User Info Resp is " + userJSON);
 		if(userJSON.getInt("errcode") == 40013){
 			return null;
 		}
