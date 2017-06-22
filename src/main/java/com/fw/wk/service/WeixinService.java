@@ -7,4 +7,6 @@ public interface WeixinService {
 	int saveUser(WeixinUser user);
 	
 	WeixinUser queryUserByWxid(String wxid);
+
+	WeixinUser megerUser(String wxid);
 }

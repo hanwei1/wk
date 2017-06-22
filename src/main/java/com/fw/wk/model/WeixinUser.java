@@ -2,6 +2,8 @@ package com.fw.wk.model;
 
 import java.util.Date;
 
+import net.sf.json.JSONObject;
+
 public class WeixinUser {
 	
 	private Integer id;
@@ -31,6 +33,22 @@ public class WeixinUser {
 	private String remark;
 	
 	private Date create_time;
+	
+	public WeixinUser() {
+		
+	}
+
+	public WeixinUser(JSONObject json) {
+		this.nickname = json.getString("nickname");
+		this.wxid = json.getString("openid");
+		this.sex = json.getInt("sex");
+		this.city = json.getString("city");
+		this.country = json.getString("country");
+		this.province = json.getString("province");
+		this.headImgUrl = json.getString("headimgurl");
+		this.remark =json.getString("unionid");
+		this.unionid = json.getString("unionid");
+	}
 
 	public Integer getId() {
 		return id;

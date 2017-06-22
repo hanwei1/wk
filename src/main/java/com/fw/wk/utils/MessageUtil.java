@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.jms.TextMessage;
 import javax.servlet.http.HttpServletRequest;
 
 import org.dom4j.Document;
@@ -15,6 +14,7 @@ import org.dom4j.io.SAXReader;
 
 import com.fw.wk.common.Article;
 import com.fw.wk.common.NewsMessage;
+import com.fw.wk.common.TextMessage;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.core.util.QuickWriter;
 import com.thoughtworks.xstream.io.HierarchicalStreamWriter;
