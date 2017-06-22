@@ -13,6 +13,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import net.sf.json.JSONObject;
+
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -151,7 +153,8 @@ public class BindingWeixinServlet extends HttpServlet {
 			requestMap = MessageUtil.parseXml(request);
 		} catch (Exception e) {
 			e.printStackTrace();
-		} 
+		}
+		logger.info("Weixin Request Context " + JSONObject.fromObject(requestMap));
 		String fromUserName = requestMap.get("FromUserName"); // 发送方帐号（open_id）
 		String msgType      = requestMap.get("MsgType");      // 消息类型
 		String toUserName   = requestMap.get("ToUserName");   // 公众帐号

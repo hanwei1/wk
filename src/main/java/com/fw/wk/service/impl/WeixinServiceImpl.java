@@ -5,6 +5,7 @@ import java.util.Map;
 
 import net.sf.json.JSONObject;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +16,7 @@ import com.fw.wk.service.WeixinService;
 import com.fw.wk.utils.HttpClientUtil;
 @Service
 public class WeixinServiceImpl extends BaseDao implements WeixinService{
-	
+	private Logger logger = Logger.getLogger(getClass());
 	@Autowired
 	private WeixinTokenServer tokenServer;
 
@@ -70,6 +71,7 @@ public class WeixinServiceImpl extends BaseDao implements WeixinService{
 
 	public WeixinUser megerUser(String wxid) {
 		WeixinUser netUser = getUserInfo(wxid);
+		logger.info("User of Weixin is " + JSONObject.fromObject(netUser));
 		if(netUser != null){
 			WeixinUser dbUser = queryUserByWxid(wxid);
 			if(dbUser == null){
@@ -82,6 +84,7 @@ public class WeixinServiceImpl extends BaseDao implements WeixinService{
 				dbUser.setRemark(netUser.getRemark());
 				updateUser(dbUser);
 			}
+			logger.info("User of DB is " + JSONObject.fromObject(netUser));
 			return dbUser;
 		}
 		
