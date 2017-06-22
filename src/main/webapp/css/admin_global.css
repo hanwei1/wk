@@ -1,0 +1,36 @@
+.title{color: #006cba;font-size: 18px;display: block;margin:10px 20px;}
+.search{}
+.datalist{border: 1px solid #c7c7c7;border-left:0;margin: 10px 20px;position: relative;}
+.datalist .tt{background-color: #eeeeee;color: #006cba;font-size: 14px;}
+.datalist .tt span{border-left: 1px solid #c7c7c7;display: inline-block;padding: 0 10px;height: 26px;line-height: 26px;}
+.datalist .tt .tools{background-color:#d0e9fd;height: 26px;display: block;border:1px solid #c7c7c7;border-right: 0;padding:0 10px;}
+.datalist .tt .tools span{border:0;}
+.datalist .tt .tools .btn{display: inline-block;padding:0 10px;border-radius:4px 4px 0 0;color:#000000;border:0;color:#838383;cursor: pointer;}
+.datalist .tt .tools .right{float:right;}
+.datalist .tt .tools .btn:hover{color:#fff;background-color:#9bd1fb; }
+.datalist .list{min-height:597px;border: 1px solid #c7c7c7;border-bottom: 0;border-right: 0;font-size: 14px;overflow: auto;}
+.datalist .list li{list-style-type: none;margin:5px 0;border-bottom: 1px dashed #c7c7c7;}
+.datalist .list li:hover{background-color:#d0e9fd;}
+.datalist .list li span{display: inline-block;overflow: hidden;padding:0 10px;}
+.editui{margin:10px 20px;border: 1px solid #e3e3e3;max-height: 90%;overflow: auto;}
+.editui li{list-style-type: none;display: block;margin:15px 0;}
+.editui li span{display: inline-block;width: 120px;text-align: right;margin:0 10px;}
+.editui li input{height: 26px;border:1px solid #e3e3e3;width: 420px;padding:0 5px;}
+.button{width: 120px;display: inline-block;border-radius:4px;color:#fff;margin:20px 10px;text-align: center;cursor: pointer;}
+.green{background-color: #38d08b;}
+.grey{background-color: #c0c0c0;}
+.red{background-color: #ee808d;}
+
+.page{position:absolute;bottom:-31px;height: 28px;line-height: 28px;width: 100%;border:1px solid #c7c7c7;}
+.page .pages{float:right;margin:0 30px;height: 26px;line-height: 26px;}
+.page .pages .pagenums{display:inline-block;float: left;}
+.page .pages span{margin:2px 1px;width: 22px;height: 22px;border-radius:4px;border:1px solid #fff;display:inline-block;float:left;text-align: center;cursor:pointer;}
+.page .pages .curr{background-color:#c1d9ff; }
+.page .pages span:hover{background-color:#eaf2ff;border:1px solid #b7d2ff;}
+.page .pages .line{width:1px;height: 24px;border-left:1px solid #c7c7c7;display:inline-block;margin:2px 0;float: left;}
+.page .pages .btn{background:url(../images/pagination_icons.png) no-repeat;}
+.page .pages .flush{background-position:-61px 5px;}
+.page .pages .last{background-position:-45px 5px;}
+.page .pages .next{background-position:-29px 5px;}
+.page .pages .prep{background-position:-14px 5px;}
+.page .pages .first{background-position:3px 5px;}

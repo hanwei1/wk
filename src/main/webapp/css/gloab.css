@@ -1,0 +1,52 @@
+*{margin:0;padding:0;}
+html,body{height:100%;font-size: 14px;line-height: 150%;}
+li{list-style: none;}
+a{text-decoration: none;}
+.header{background: #fbfbfb none repeat scroll 0 0;border-bottom: 1px solid #ddd;height: 114px;position: relative;z-index: 99;}
+.header .top{background: #333 none repeat scroll 0 0; color: #fff;height: 32px;line-height: 30px;position: relative;z-index: 999;}
+.header .top .welcome{display: block;margin: 0 auto;text-align: right;width: 1200px;}
+.header .logo{margin: 10px auto;width: 1200px;}
+.subnav{background: #f6f6f6 none repeat scroll 0 0;border-bottom: 1px solid #ccc;border-top: 1px solid #fff;height: 38px;}
+.subnav ul{display: block;margin: 10px auto;width: 1200px;}
+.subnav ul li{display: inline-block;padding-right:10px; border-right: 1px solid #fff;color:#333;}
+.subnav ul li a:hover{color:#fff;background-color: #ff7300;}
+.subnav ul li .curr{color:#fff;background-color: #ff7300;}
+.content{margin: 10px auto;width: 1200px;}
+.content .menu{float: left;margin-right: 24px;width: 180px;height: 100%;}
+.content .menu .titel{background: #333 none repeat scroll 0 0;color: #ccc;font-size: 14px;font-weight: bold;height: 40px;line-height: 40px;padding-left: 18px;text-align: left;width: 162px;display: block;}
+.content .menu li{display: block;border-top: 1px solid #fff;color: #666;height: 40px;line-height: 40px;text-align: center;background-color: #f6f6f6;cursor: pointer;}
+.content .menu li:HOVER {color:#fff;background-color: #ff7300;}
+.content .menu .curr {color:#fff;background-color: #ff7300;}
+.content .main{float:right;width: 990px;}
+.content .main .show{width: 100%;position: relative;}
+.content .main .show .left{width: 400px;}
+.content .main .show .left img{border: 1px solid #ddd;}
+.content .main .show .left .big{width: 400px;height: 400px;}
+.content .main .show .left .small{width: 68px;height: 68px;margin: 10px 8px 10px 0;cursor: pointer;}
+.content .main .show .left .small:HOVER {border-color:#ff7300;}
+.content .main .show .left .small:active {border-color:#ff7300;}
+.content .main .show .detail{border: 4px solid #ddd;height: 476px;position: absolute;right: 0;top: 0;width: 554px;}
+.content .main .show .detail span{display: block;margin:14px 50px;height:40px;line-height: 40px; }
+.content .main .show .detail .title{font-size: 25px;}
+.content .main .show .detail .grey{color:#999;}
+.content .main .show .detail .orange{color:#f60;}
+.content .main .show .detail .red{color:#ff0000;}
+.content .main .show .detail .btn{background: #ff7300 none repeat scroll 0 0;color: white;display: inline-block;font-size: 20px;height: 40px;line-height: 40px;text-align: center;width: 150px;cursor: pointer;}
+.content .main .pro_m{width: 100%;background-color: #f6f6f6;height: 40px;border-top: 6px solid #ddd;position: relative;}
+.content .main .pro_m span{width: 120px;background-color: #f9f9f9;height: 40px;border-top: 6px solid #f60;display: block;position: absolute;top:-6px;text-align: center;line-height: 36px;color: #666;cursor: pointer;}
+.content .main .pro_d{width: 100%;}
+.content .main .pro_d .title{border-left: 3px solid #f60;height: 20px;line-height: 20px;margin: 10px 0;padding-left: 4px;}
+.content .main .pro_d img{width: 990px;}
+.content .main .li_pro{border: 1px solid #ddd;float: left;height: 300px;margin-bottom: 20px;margin-right: 20px;overflow: hidden;width: 224px;}
+.content .main .li_pro img{width: 224px;height: 188px;}
+.content .main .li_pro .title{display: block;font-size: 12px;margin: 4px auto;text-align: center;width: 200px;}
+.content .main .li_pro .amount{font-size: 16px;width: 90px;color: #ff7300;font-weight: 900;margin: 6px 10px;display: inline-block;}
+.content .main .li_pro .have{background-color: #cdcdcd;color:#fff;padding: 0 10px;}
+.content .main .li_pro .mask{background-color: #f6f6f6;display: block;font-size: 12px;padding: 4px 10px;}
+.content .main .page{margin: 0 auto;overflow: hidden;text-align: center;width: 800px;height: 80px;line-height: 70px;color: #888;}
+.content .main .page span{border: 1px solid #888;display: inline-block;height: 32px;line-height: 32px;margin: 0 2px;padding: 0 13px;cursor: pointer;}
+.content .main .page .curr{color:#ff7300;border-color: #ff7300;}
+.content .main .page span:HOVER {border-color:#ffb97f;color:#ff7300;}
+
+
+
