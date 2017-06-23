@@ -42,7 +42,7 @@
 	
 	<aop:config proxy-target-class="true">
 		<aop:pointcut id="serviceMethod"
-			expression=" execution(* com.jianan.shop.service..*(..))" />
+			expression=" execution(* com.fw.wk.service..*(..))" />
 		<aop:advisor pointcut-ref="serviceMethod" advice-ref="txAdvice" />
 	</aop:config>
 	<tx:advice id="txAdvice" transaction-manager="transactionManager">
